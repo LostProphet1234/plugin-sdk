@@ -27,6 +27,7 @@ SUPPORTED_10EN_11EN_STEAM extern unsigned int &TimeStartedCountingForFade;
 SUPPORTED_10EN_11EN_STEAM extern bool &StillToFadeOut;
 SUPPORTED_10EN_11EN_STEAM extern bool &b_FoundRecentSavedGameWantToLoad;
 SUPPORTED_10EN_11EN_STEAM extern bool &JustLoadedDontFadeInYet;
+extern char(&LoadFileName)[256];
 
 SUPPORTED_10EN_11EN_STEAM bool GenericSave(int file);
 SUPPORTED_10EN_11EN_STEAM bool GenericLoad();

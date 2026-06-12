@@ -11,7 +11,7 @@ PLUGIN_SOURCE_FILE
 PLUGIN_VARIABLE unsigned int &TimeToStayFadedBeforeFadeOut = *reinterpret_cast<unsigned int *>(GLOBAL_ADDRESS_BY_VERSION(0x611564, 0x610E2C, 0x61DE24));
 PLUGIN_VARIABLE unsigned int &SIZE_OF_ONE_GAME_IN_BYTES = *reinterpret_cast<unsigned int *>(GLOBAL_ADDRESS_BY_VERSION(0x611570, 0x610E38, 0x61DE30));
 PLUGIN_VARIABLE wchar_t(&SlotFileName)[8][260] = *reinterpret_cast<wchar_t(*)[8][260]>(GLOBAL_ADDRESS_BY_VERSION(0x6F07C8, 0x6F07C8, 0x700908));
-PLUGIN_VARIABLE int(&Slots)[9] = *reinterpret_cast<int(*)[9]>(GLOBAL_ADDRESS_BY_VERSION(0x72803C, 0x72803C, 0x73817C));
+PLUGIN_VARIABLE int(&Slots)[9] = *reinterpret_cast<int(*)[9]>(GLOBAL_ADDRESS_BY_VERSION(0x728040, 0x72803C, 0x73817C));
 PLUGIN_VARIABLE wchar_t(&SlotSaveDate)[8][70] = *reinterpret_cast<wchar_t(*)[8][70]>(GLOBAL_ADDRESS_BY_VERSION(0x72B858, 0x72B858, 0x73B998));
 PLUGIN_VARIABLE CDate &CompileDateAndTime = *reinterpret_cast<CDate *>(GLOBAL_ADDRESS_BY_VERSION(0x72BCB8, 0x72BCB8, 0x73BDF8));
 PLUGIN_VARIABLE char(&DefaultPCSaveFileName)[260] = *reinterpret_cast<char(*)[260]>(GLOBAL_ADDRESS_BY_VERSION(0x8E28C0, 0x8E2870, 0x8F29B0));
@@ -23,6 +23,8 @@ PLUGIN_VARIABLE unsigned int &TimeStartedCountingForFade = *reinterpret_cast<uns
 PLUGIN_VARIABLE bool &StillToFadeOut = *reinterpret_cast<bool *>(GLOBAL_ADDRESS_BY_VERSION(0x95CD99, 0x95CF52, 0x96D092));
 PLUGIN_VARIABLE bool &b_FoundRecentSavedGameWantToLoad = *reinterpret_cast<bool *>(GLOBAL_ADDRESS_BY_VERSION(0x95CDA8, 0x95CF61, 0x96D0A1));
 PLUGIN_VARIABLE bool &JustLoadedDontFadeInYet = *reinterpret_cast<bool *>(GLOBAL_ADDRESS_BY_VERSION(0x95CDB4, 0x95CF6C, 0x96D0AC));
+
+PLUGIN_VARIABLE char(&LoadFileName)[256] = *reinterpret_cast<char(*)[256]>(0x9403C4);
 
 int addrof(GenericSave) = ADDRESS_BY_VERSION(0x58F8D0, 0x58FBC0, 0x58FAB0);
 int gaddrof(GenericSave) = GLOBAL_ADDRESS_BY_VERSION(0x58F8D0, 0x58FBC0, 0x58FAB0);
